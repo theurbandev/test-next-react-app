@@ -21,12 +21,17 @@ const UserOne : TemplateName = {
   }
 }
 
+let numbers = [1, 9]
+const addNums = <h1> Your toal is: {numbers[0] + numbers[1]} </h1>
+
+
+
+// return variable 
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
-      <h1>{formatUser(UserOne)}</h1>
+      {addNums}
     </div>
   )
 }
-
 export default Home
