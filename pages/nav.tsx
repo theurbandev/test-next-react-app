@@ -1,9 +1,10 @@
 import type { NextPage } from 'next'
+import styles from '../styles/nav.module.css'
 
-const Nav : NextPage = () =>{
+const Nav : NextPage = () => {
     return (
         <div>
-            <h1>This is the nav.</h1>
+            <h1 className = {styles.navTxt}>To-Do</h1>
         </div>
     )
 }
