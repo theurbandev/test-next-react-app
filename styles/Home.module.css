@@ -121,4 +121,15 @@
 
 .center{
   text-align: center;
+  font-size: 70px;
+}
+
+.gridContainer{
+  display: grid;
+  grid-template-columns: 26% auto 26%;
+  padding: 10px;
+}
+
+.lightFont{
+  font-weight: 100;
 }
