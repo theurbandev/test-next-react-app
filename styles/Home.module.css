@@ -108,9 +108,17 @@
   margin-left: 0.5rem;
 }
 
+.menuButtons{
+  background-color: green;
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
     flex-direction: column;
   }
+}
+
+.center{
+  text-align: center;
 }
