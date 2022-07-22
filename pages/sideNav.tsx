@@ -17,4 +17,8 @@ export const SideNav = (props: Props) => {
     )
 };
 
+function clicked(title : string){
+    alert(title);
+}
+
 export default SideNav
