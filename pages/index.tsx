@@ -16,7 +16,7 @@ const Home: NextPage = () => {
       <div className="grid-item">
         <h1 className={styles.lightFont}>All Tasks Complete!</h1>
       </div>
-
+      
     </div>
     </>
   )
