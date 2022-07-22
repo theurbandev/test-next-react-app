@@ -10,7 +10,7 @@ const Home: NextPage = () => {
     <h1 className={styles.center}>To-Do</h1>
     <div className={styles.gridContainer}>
         <div className='grid-item'>
-          <SideNav/>
+          <SideNav name="Matthew."/>
         </div>
 
       <div className="grid-item">
@@ -20,6 +20,6 @@ const Home: NextPage = () => {
     </div>
     </>
   )
-}
+};
 
-export default Home
+export default Home;
