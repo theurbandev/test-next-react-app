@@ -1,18 +1,26 @@
 import type { NextPage } from 'next'
 import styles from '../styles/nav.module.css'
+import Button from './buttons'
 
-interface Props{
-    name : string,
-    age? : number
+interface NavProps{
+    name : string
 };
 
-export const SideNav = (props: Props) => {
+function HandleBttnClick(event : string){
+    alert({event} + " has happended");
+}
+
+const navItemList = ["Add Task", "Delete Task", "Undo"];
+const navBttnList : Array<any> = [];
+navItemList.forEach((item, index) => {
+    navBttnList.push(<Button text={navItemList[index]} fontSize={"20px"} backgroundColor={"black"} textColor={"white"} padding={"10px"}></Button>)
+});
+
+const SideNav = (props: NavProps) => {
     return (
         <div className={styles.container} id={styles.sideNav}>
             <h2>{props.name}</h2>
-            <h1 className={styles.menuButtons}>Add Task</h1>
-            <h1 className={styles.menuButtons}>Delete Task</h1>
-            <h1 className={styles.menuButtons}>Undo</h1>
+            {navBttnList}
         </div>
     )
 };

@@ -9,8 +9,10 @@
 
 .gridContainer{
   display: grid;
-  grid-template-columns: 26% auto 26%;
+  grid-template-columns: 30% 70%;
   padding: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .lightFont{
