@@ -25,4 +25,8 @@ const SideNav = (props: NavProps) => {
     )
 };
 
+function clicked(title : string){
+    alert(title);
+}
+
 export default SideNav
